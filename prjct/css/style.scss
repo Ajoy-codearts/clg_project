@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* header */
+@import "distributor/header";
+
+/* hero */
+@import "distributor/hero";
+
+/* short service */
+@import "distributor/shortService";
+
+/* why choose us */
+@import "distributor/whyChoose";
+
+/* work */
+@import "distributor/work";
+
+/* creativeWork */
+@import "distributor/creativeWork";
+
+/* doctor */
+@import "distributor/doctor";
+
+/* doc_map */
+@import "distributor/doc_map";
+
+/* footer */
+@import "distributor/footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+}
+
+.white_heading_text{
+    text-shadow: 0 0 3px #ebcaca, 0 0 5px #040404;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main_btn{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    transition: all .5s ease-in-out;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 25px;
+    border: 1px solid #000000;
+    font-weight: 800;
+    &:hover{
+        background-color: rgb(245, 236, 236);
+        border: none;
+    }
+    a{
+        text-transform: uppercase;
+        font-size: 17px;
+        color: #000000;
+    }
+}
+
+.d_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:1500px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (max-width:1150px){
+    .container{
+        max-width: 1024px;
+    }
+}
+@media only screen and (max-width:1024px){
+    .container{
+        max-width: 900px;
+    }
+}
